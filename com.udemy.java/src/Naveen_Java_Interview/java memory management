@@ -1,0 +1,29 @@
+divided into two parts
+1-Heap memory  2-Stack memory
+the memory of heap memory>>> that of stack.
+
+heap memory :
+-stores all objects and JRE classes
+--GC only runs here
+divided into young generation and old generation.
+young generation:
+further divided into eden/survivor s1/ survivors2 memory.
+minor GC runs here
+old generation:
+has method pool--- stores immutable obj like string pool and string class . defined at runtime by JVM managers
+major GC runs here.
+slow as many obj are stored here.
+TimeOut errors
+
+stack memory:
+has permanent generation--->
+stores al the meta data of classes and methods that are not part of heap memory and generated at run time.
+has method area(static &constant variables;class structure )
+        which further has permanent constant pool(stores static and constant variables)
+method block--->present in java stack memory it gives memory to method that is being executed.
+java stack memory:
+--stores local variables(method specific vars)
+--stores obj references
+
+
+
